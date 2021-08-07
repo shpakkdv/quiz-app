@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>IPSec Quiz</title>
+    <style>
+      * {
+        font-size: 24px;
+      }
+
+      body {
+        margin: 10px;
+      }
+
+      input {
+        width: 500px;
+      }
+
+      input[type='text'], input[type='password'] {
+        border: 1px solid #e1e1e1;
+        border-radius: 7px;
+        padding: 0 5px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        border: 1px solid #e1e1e1;
+        border-radius: 18px;
+        padding: 5px 20px;
+        background-color: #eff5ff;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: #d6e6ff;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+        background-color: #eff5ff;
+      }
+
+      /* App */
+      .app__quizzes-title {
+        margin: 40px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #445358;
+      }
+
+      .stop-quizzes {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .stop-quizzes__input {
+        width: 150px;
+      }
+
+      .stop-quizzes__input, .stop-quizzes__button {
+        font-size: 14px;
+        margin: 0 5px;
+      }
+
+      .scheme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .scheme > img {
+        margin: 20px 0;
+        width: 100%;
+      }
+
+      /* UserData */
+      .user-data__title {
+        display: inline-block;
+        margin: 10px 5px;
+        min-width: 120px;
+      }
+
+      .start-button {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      /* Quizzes */
+      .next-quiz {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      /* QuizzesList */
+      .quizzes-list__passed-item {
+        font-weight: bold;
+        color: #00cd00;
+      }
+
+      .quizzes-list__current-item {
+        font-weight: bold;
+      }
+
+      /* Quiz */
+      .quiz-title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .questions-amount {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .quiz-input {
+        display: flex;
+        font-size: 10px;
+        margin: 10px 0;
+      }
+
+      .quiz-input > span {
+        color: gray;
+        margin-right: 7px;
+      }
+
+      .quiz-input > input {
+        flex-grow: 1;
+      }
+
+      .answer-message {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .answer-message__correct {
+        color: green;
+      }
+
+      .answer-message__incorrect {
+        color: red;
+      }
+
+      .quiz-buttons {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      .quiz-buttons > button:first-child {
+        margin-right: 20px;
+      }
+
+      .show-answer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 40px;
+      }
+
+      .show-answer > div {
+        font-size: 16px;
+      }
+
+      .show-answer > button {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      /* Result */
+      .results__user-data {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .results__quiz {
+        margin: 20px 0;
+      }
+
+      .results__quiz-title {
+        font-weight: bold;
+      }
+
+      .results__quiz-statistic {
+        margin-left: 20px;
+      }
+
+      .results__quiz-statistic_correct {
+        color: #28c528;
+      }
+
+      .results__quiz-statistic_incorrect {
+        color: red;
+      }
+
+      .common-result {
+        margin: 30px;
+      }
+
+      .common-result > div {
+        font-size: 28px;
+      }
+
+      .common-result > div:last-child {
+        margin: 10px 0;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .common-result > div > b {
+        font-size: 30px;
+        color: #0029ff;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
